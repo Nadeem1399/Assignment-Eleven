@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Limit for Textarea</title>
+</head>
+<body>
+
+    <textarea id="myTextarea" rows="4" cols="50" onkeyup="limitText(this, document.getElementById('charCount'), 100)"></textarea>
+    <br>
+    <input type="text" id="charCount" readonly value="You have 100 characters left." />
+
+    <script src="script.js"></script>
+</body>
+</html>
